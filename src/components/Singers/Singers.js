@@ -1,11 +1,12 @@
 import React from 'react';
 import './Singers.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMusic, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import { faMusic, faPlayCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Singers = (props) => {
     const element = <FontAwesomeIcon icon={faMusic} size="2x" />
     const playCircle = <FontAwesomeIcon icon={faPlayCircle} size="2x" />
+    const shoppingCart = <FontAwesomeIcon icon={faShoppingCart} size="2x" />
     const { img, name, famous_song, net_worth, per_show_salary, birth_date } = props.singer;
     return (
         <div className="bg-gray-200 border group hover:bg-white hover:border-transparent hover:shadow-lg m-4 ring-4 rounded singers text-center ring-gray-600">
@@ -22,7 +23,7 @@ const Singers = (props) => {
                 <button onClick={() => props.addToCart(props.singer)}
                     type="submit"
                     className="group relative w-3/4 mx-auto m-4 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >Add To Cart
+                ><span className="mx-2">{shoppingCart}</span> Add To Cart
                 </button>
                 <div className="mb-3 text-gray-500">
                     <span className="mx-10"> {element}</span> <span className="mx-10">{playCircle}</span>

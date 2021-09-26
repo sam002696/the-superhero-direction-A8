@@ -11,7 +11,7 @@ const Cart = (props) => {
     return (
         <div>
             <h3 className="p-10 text-3xl text-center text-gray-700 underline">   {element} Singers Added : {cart.length} </h3>
-            <h3 className="p-10 text-3xl text-center text-gray-700 underline">Total Cost: {total}</h3>
+            <h3 className="p-10 text-3xl text-center text-gray-700 underline">Total Cost: ${total}</h3>
             {
                 name.map(name => <Name name={name} key={name}></Name>)
             }
