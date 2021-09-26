@@ -1,7 +1,7 @@
 # Welcome to Singers Fest Website
 
 This project is deployed in NETLIFY,
-Live Site Link : https://github.com/facebook/create-react-app.
+Live Site Link : https://singers-fest-sam002696.netlify.app/
 
 ## Bullet Points :
 From this WEBSITE you can do certain things :
